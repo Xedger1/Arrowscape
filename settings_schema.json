@@ -1,0 +1,18 @@
+
+[
+  {
+    "name": "General settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "label": "Main color",
+        "id": "main_color",
+        "default": "#333333"
+      }
+    ]
+  }
+]

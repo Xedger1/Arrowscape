@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaping by {{ shop.name }}</title>
+    {{ 'styles.css' | asset_url | stylesheet_tag }}
+</head>
+<body>
+    <header>
+        <h1>{{ shop.name }}</h1>
+        <nav>
+            <a href="{{ routes.root_url }}">Home</a>
+            <a href="/pages/services">Services</a>
+            <a href="/pages/portfolio">Portfolio</a>
+            <a href="/pages/contact">Contact</a>
+        </nav>
+    </header>
+
+    {{ content_for_layout }}
+
+    <footer>
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}. All rights reserved.</p>
+    </footer>
+</body>
+</html>
